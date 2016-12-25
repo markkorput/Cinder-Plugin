@@ -4,7 +4,7 @@ namespace CinderPlugin {
     
     template<typename PluginBaseType>
     class Interface {
-        
+
     public:
         const std::vector<std::shared_ptr<PluginBaseType>> &getPlugins(){
             return mPlugins;
