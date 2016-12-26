@@ -7,10 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D06179A1E111AD50015CD86 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0617991E111AD50015CD86 /* AVFoundation.framework */; };
+		4D06179D1E111B140015CD86 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D06179B1E111B140015CD86 /* Cocoa.framework */; };
+		4D06179E1E111B140015CD86 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D06179C1E111B140015CD86 /* CoreMedia.framework */; };
+		4D0617A01E111B170015CD86 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D06179F1E111B170015CD86 /* OpenGL.framework */; };
+		4D0617A21E111B290015CD86 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0617A11E111B290015CD86 /* Accelerate.framework */; };
+		4D0617A41E111B2E0015CD86 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0617A31E111B2E0015CD86 /* AudioToolbox.framework */; };
+		4D0617A61E111B380015CD86 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0617A51E111B380015CD86 /* AudioUnit.framework */; };
+		4D0617A81E111B3D0015CD86 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0617A71E111B3D0015CD86 /* CoreAudio.framework */; };
+		4D0617AA1E111B520015CD86 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0617A91E111B520015CD86 /* IOKit.framework */; };
+		4D0617AC1E111B570015CD86 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0617AB1E111B570015CD86 /* IOSurface.framework */; };
+		4D0617AE1E111B830015CD86 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0617AD1E111B830015CD86 /* CoreVideo.framework */; };
 		4D3A4A871E10841700D6E1EA /* plugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A4A841E10838500D6E1EA /* plugin.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D0617991E111AD50015CD86 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4D06179B1E111B140015CD86 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4D06179C1E111B140015CD86 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4D06179F1E111B170015CD86 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		4D0617A11E111B290015CD86 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		4D0617A31E111B2E0015CD86 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4D0617A51E111B380015CD86 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		4D0617A71E111B3D0015CD86 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		4D0617A91E111B520015CD86 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		4D0617AB1E111B570015CD86 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		4D0617AD1E111B830015CD86 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		4D09A1811E108354009E2C37 /* libdrawablePlugin.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libdrawablePlugin.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3A4A841E10838500D6E1EA /* plugin.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = plugin.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -20,6 +42,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D0617AE1E111B830015CD86 /* CoreVideo.framework in Frameworks */,
+				4D0617AC1E111B570015CD86 /* IOSurface.framework in Frameworks */,
+				4D0617AA1E111B520015CD86 /* IOKit.framework in Frameworks */,
+				4D0617A81E111B3D0015CD86 /* CoreAudio.framework in Frameworks */,
+				4D0617A61E111B380015CD86 /* AudioUnit.framework in Frameworks */,
+				4D0617A41E111B2E0015CD86 /* AudioToolbox.framework in Frameworks */,
+				4D0617A21E111B290015CD86 /* Accelerate.framework in Frameworks */,
+				4D0617A01E111B170015CD86 /* OpenGL.framework in Frameworks */,
+				4D06179D1E111B140015CD86 /* Cocoa.framework in Frameworks */,
+				4D06179E1E111B140015CD86 /* CoreMedia.framework in Frameworks */,
+				4D06179A1E111AD50015CD86 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -29,6 +62,17 @@
 		4D09A1781E108354009E2C37 = {
 			isa = PBXGroup;
 			children = (
+				4D0617AD1E111B830015CD86 /* CoreVideo.framework */,
+				4D0617AB1E111B570015CD86 /* IOSurface.framework */,
+				4D0617A91E111B520015CD86 /* IOKit.framework */,
+				4D0617A71E111B3D0015CD86 /* CoreAudio.framework */,
+				4D0617A51E111B380015CD86 /* AudioUnit.framework */,
+				4D0617A31E111B2E0015CD86 /* AudioToolbox.framework */,
+				4D0617A11E111B290015CD86 /* Accelerate.framework */,
+				4D06179F1E111B170015CD86 /* OpenGL.framework */,
+				4D06179B1E111B140015CD86 /* Cocoa.framework */,
+				4D06179C1E111B140015CD86 /* CoreMedia.framework */,
+				4D0617991E111AD50015CD86 /* AVFoundation.framework */,
 				4D3A4A831E10838500D6E1EA /* src */,
 				4D09A1821E108354009E2C37 /* Products */,
 			);
