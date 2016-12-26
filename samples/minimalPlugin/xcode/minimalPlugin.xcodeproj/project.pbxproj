@@ -29,7 +29,6 @@
 		4D09A1781E108354009E2C37 = {
 			isa = PBXGroup;
 			children = (
-				4DA1EF9B1E10874300000476 /* blocks */,
 				4D3A4A831E10838500D6E1EA /* src */,
 				4D09A1821E108354009E2C37 /* Products */,
 			);
@@ -50,13 +49,6 @@
 			);
 			name = src;
 			path = ../src;
-			sourceTree = "<group>";
-		};
-		4DA1EF9B1E10874300000476 /* blocks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = blocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

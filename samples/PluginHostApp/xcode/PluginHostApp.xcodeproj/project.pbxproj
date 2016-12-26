@@ -16,12 +16,11 @@
 		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
 		00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995581B128DF400A5C623 /* IOKit.framework */; };
 		00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995591B128DF400A5C623 /* IOSurface.framework */; };
+		4DA1EFAB1E10893D00000476 /* LibManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1EFA91E10893D00000476 /* LibManager.cpp */; };
 		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		E6539A9B6A994399AD3F7AAE /* PluginHostApp_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = F5269045203C44E084FAF077 /* PluginHostApp_Prefix.pch */; };
 		AAAD8CE48C6A41868C435BC3 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4776E769D0674F0980BEE5A7 /* CinderApp.icns */; };
-		C519E7E6910E447794D45775 /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = E10C761413834764995511E2 /* Resources.h */; };
-		BADE0F5887554CC7BA0A7DD6 /* PluginHostAppApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F9F47E49B41CF9DBDC1BB /* PluginHostAppApp.cpp */; };
+		BADE0F5887554CC7BA0A7DD6 /* PluginHostApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F9F47E49B41CF9DBDC1BB /* PluginHostApp.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,16 +33,25 @@
 		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		00B995581B128DF400A5C623 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		00B995591B128DF400A5C623 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		0E7F9F47E49B41CF9DBDC1BB /* PluginHostApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PluginHostApp.cpp; path = ../src/PluginHostApp.cpp; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		4776E769D0674F0980BEE5A7 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
+		4DA1EFA01E10883600000476 /* CinderPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CinderPlugin.h; path = ../../../src/CinderPlugin.h; sourceTree = "<group>"; };
+		4DA1EFA31E10884900000476 /* Context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Context.h; sourceTree = "<group>"; };
+		4DA1EFA41E10884900000476 /* Interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interface.h; sourceTree = "<group>"; };
+		4DA1EFA61E10884900000476 /* EmptyPluginBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyPluginBase.h; sourceTree = "<group>"; };
+		4DA1EFA71E10884900000476 /* NamedPluginBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NamedPluginBase.h; sourceTree = "<group>"; };
+		4DA1EFA91E10893D00000476 /* LibManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LibManager.cpp; sourceTree = "<group>"; };
+		4DA1EFAA1E10893D00000476 /* LibManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibManager.h; sourceTree = "<group>"; };
+		4DA1EFAC1E108CA800000476 /* PluginManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PluginManager.h; sourceTree = "<group>"; };
+		4DA1EFAD1E10941B00000476 /* PluginEssentials.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PluginEssentials.h; sourceTree = "<group>"; };
 		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		8D1107320486CEB800E47090 /* PluginHostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PluginHostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E7F9F47E49B41CF9DBDC1BB /* PluginHostAppApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../src/PluginHostAppApp.cpp; sourceTree = "<group>"; name = PluginHostAppApp.cpp; };
-		E10C761413834764995511E2 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../include/Resources.h; sourceTree = "<group>"; name = Resources.h; };
-		4776E769D0674F0980BEE5A7 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; name = CinderApp.icns; };
-		8ECBE8F42DA944C78852B6A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; name = Info.plist; };
-		F5269045203C44E084FAF077 /* PluginHostApp_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = PluginHostApp_Prefix.pch; sourceTree = "<group>"; name = PluginHostApp_Prefix.pch; };
+		8ECBE8F42DA944C78852B6A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10C761413834764995511E2 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
+		F5269045203C44E084FAF077 /* PluginHostApp_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = PluginHostApp_Prefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +76,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				4DA1EFA11E10883900000476 /* CinderPlugin */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
 		080E96DDFE201D6D7F000001 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				0E7F9F47E49B41CF9DBDC1BB /* PluginHostAppApp.cpp */,
+				0E7F9F47E49B41CF9DBDC1BB /* PluginHostApp.cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -124,13 +140,6 @@
 			name = PluginHostApp;
 			sourceTree = "<group>";
 		};
-		01B97315FEAEA392516A2CEA /* Blocks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Blocks;
-			sourceTree = "<group>";
-		};
 		29B97315FDCFA39411CA2CEA /* Headers */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +165,39 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DA1EFA11E10883900000476 /* CinderPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				4DA1EFA21E10884900000476 /* CinderPlugin */,
+				4DA1EFA01E10883600000476 /* CinderPlugin.h */,
+			);
+			name = CinderPlugin;
+			sourceTree = "<group>";
+		};
+		4DA1EFA21E10884900000476 /* CinderPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				4DA1EFA31E10884900000476 /* Context.h */,
+				4DA1EFA41E10884900000476 /* Interface.h */,
+				4DA1EFA51E10884900000476 /* types */,
+				4DA1EFA91E10893D00000476 /* LibManager.cpp */,
+				4DA1EFAA1E10893D00000476 /* LibManager.h */,
+				4DA1EFAC1E108CA800000476 /* PluginManager.h */,
+				4DA1EFAD1E10941B00000476 /* PluginEssentials.h */,
+			);
+			name = CinderPlugin;
+			path = ../../../src/CinderPlugin;
+			sourceTree = "<group>";
+		};
+		4DA1EFA51E10884900000476 /* types */ = {
+			isa = PBXGroup;
+			children = (
+				4DA1EFA61E10884900000476 /* EmptyPluginBase.h */,
+				4DA1EFA71E10884900000476 /* NamedPluginBase.h */,
+			);
+			path = types;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +226,8 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PluginHostApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -219,7 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BADE0F5887554CC7BA0A7DD6 /* PluginHostAppApp.cpp in Sources */,
+				BADE0F5887554CC7BA0A7DD6 /* PluginHostApp.cpp in Sources */,
+				4DA1EFAB1E10893D00000476 /* LibManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,17 +275,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				DEAD_CODE_STRIPPING = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PluginHostApp_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PluginHostApp_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -262,12 +307,12 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PluginHostApp_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"NDEBUG=1",
 					"$(inherited)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PluginHostApp_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -284,7 +329,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CINDER_PATH = "../../../../cinder_master";
+				CINDER_PATH = ../../../../cinder_master;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
 				ENABLE_TESTABILITY = YES;
@@ -302,7 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CINDER_PATH = "../../../../cinder_master";
+				CINDER_PATH = ../../../../cinder_master;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
